@@ -1,0 +1,5 @@
+#targetting $HOME, as zsh cfg file lives in home directory,
+#other programms and scripts usually lives in $HOME/.config, 
+#that is why `.config` directory exists
+--target=$HOME
+--ignore=.stowrc
