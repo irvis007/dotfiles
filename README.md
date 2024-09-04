@@ -11,7 +11,7 @@ Ensure you have the following installed on your system
 
 ## Using this repo
 
-make a backup of files you want to sync, or just ensure they are not present on a system.
+Make a backup of files you want to sync, or just ensure they are not present on a system.
 
 clone a repo
 
