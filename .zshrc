@@ -74,6 +74,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 # Add wisely, as too many plugins slow down shell startup.
 
 plugins=(
+	alias-finder
 	zsh-autosuggestions 
 	git 
 	z 
@@ -81,7 +82,18 @@ plugins=(
 	sudo
 	colored-man-pages
 	zsh-syntax-highlighting
-	
+	dotenv
+	aliases
+	fabric
+	history
+	nmap
+	safe-paste
+	snap
+	systemd
+	terminitor
+	ubuntu
+	zsh-interactive-cd
+
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -148,6 +160,14 @@ export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
 
 # export GPG Key
 [ -f ~/.zshrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)
 
 export GPG_TTY=$(tty)
 
