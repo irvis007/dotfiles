@@ -145,3 +145,10 @@ eval "$(pyenv init -)"
 export PATH="$PATH:/home/lblazejowski/.cache/lm-studio/bin"
 if [ -f "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc" ]; then . "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc"; fi
 export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
+
+# export GPG Key
+[ -f ~/.zshrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc
+
+export GPG_TTY=$(tty)
+
+export GPG_TTY=$(tty)

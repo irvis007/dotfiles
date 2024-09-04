@@ -1,6 +1,6 @@
 # Home for my dotfiles
 
-This repo contains the dotfile I use
+This repository contains the dotfile I use
 
 ## Requirements
 
