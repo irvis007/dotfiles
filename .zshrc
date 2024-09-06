@@ -159,6 +159,10 @@ if [ -f "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc" ]; then . "/hom
 export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
 
 # export GPG Key
-[ -f ~/.zshrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc
-
 export GPG_TTY=$(tty)
+
+#alias-finder plugin
+zstyle ':omz:plugins:alias-finder' autoload yes # disabled by default
+zstyle ':omz:plugins:alias-finder' longer yes # disabled by default
+zstyle ':omz:plugins:alias-finder' exact yes # disabled by default
+zstyle ':omz:plugins:alias-finder' cheaper yes # disabled by default
