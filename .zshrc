@@ -162,13 +162,3 @@ export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
 [ -f ~/.zshrc ] && echo -e '\nexport GPG_TTY=$(tty)' >> ~/.zshrc
 
 export GPG_TTY=$(tty)
-
-export GPG_TTY=$(tty)
-
-export GPG_TTY=$(tty)
-
-export GPG_TTY=$(tty)
-
-export GPG_TTY=$(tty)
-
-export GPG_TTY=$(tty)
