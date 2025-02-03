@@ -75,25 +75,27 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 
 plugins=(
 	alias-finder
-	zsh-autosuggestions 
-	git 
-	z 
-	command-not-found
-	sudo
-	colored-man-pages
-	zsh-syntax-highlighting
-	dotenv
 	aliases
+	aws
+	colored-man-pages
+	command-not-found
+	docker
+	dotenv
 	fabric
+	git 
 	history
 	nmap
 	safe-paste
 	snap
+	sudo
+	systemadmin
 	systemd
-	terminitor
+	terraform
 	ubuntu
+	z 
+	zsh-autosuggestions 
 	zsh-interactive-cd
-
+	zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -143,6 +145,7 @@ alias ..2="cd ../.."
 alias ..3="cd ../../.."
 alias ..4="cd ../../../.."
 alias ..5="cd ../../../../.."
+alias copy="clipcopy"
 eval "$(direnv hook zsh)"
 
 #Go and terrafrom set up
@@ -150,7 +153,7 @@ eval "$(direnv hook zsh)"
 export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH=$PATH:/home/lblazejowski/.tfenv/bin/terraform
 
-#add llm studio and fabric setup
+#adding llm studio and fabric setup
 export PYENV_ROOT="$HOME/.pyenv"
 command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init -)"
@@ -158,7 +161,6 @@ export PATH="$PATH:/home/lblazejowski/.cache/lm-studio/bin"
 if [ -f "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc" ]; then . "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc"; fi
 export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
 
-# export GPG Key
 export GPG_TTY=$(tty)
 
 #alias-finder plugin
