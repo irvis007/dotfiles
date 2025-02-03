@@ -154,12 +154,12 @@ export PATH="$HOME/.tfenv/bin:$PATH"
 export PATH=$PATH:/home/lblazejowski/.tfenv/bin/terraform
 
 #adding llm studio and fabric setup
-export PYENV_ROOT="$HOME/.pyenv"
-command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init -)"
-export PATH="$PATH:/home/lblazejowski/.cache/lm-studio/bin"
-if [ -f "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc" ]; then . "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc"; fi
-export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
+# export PYENV_ROOT="$HOME/.pyenv"
+# command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+# eval "$(pyenv init -)"
+# export PATH="$PATH:/home/lblazejowski/.cache/lm-studio/bin"
+# if [ -f "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc" ]; then . "/home/lblazejowski/.config/fabric/fabric-bootstrap.inc"; fi
+# export OPENAI_BASE_URL=http://127.0.0.1:1234/v1
 
 export GPG_TTY=$(tty)
 
